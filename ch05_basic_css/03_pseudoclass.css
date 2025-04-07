@@ -1,0 +1,96 @@
+/* 자손 결합자 */
+.outer li {
+  color: olivedrab
+}
+/*.outer 때문에 김일-김구는 oliverdrab이 적용되지 않았음
+자손 : 일촌 자식 뿐만 아니라 손자, 손녀, 증손자, 증손녀를 포함하는 개념
+
+근데 이러니까 .outer의 자식 요소인 li와, 4번째 li의 자식 요소인 ul 태그의 li(.outer 기준으로 손주 태그)도 전부 바뀌는 것이 확인되는데, '자식 요소만' 바꾸고 싶다면
+*/
+/* 자식(1촌 자손) 결합자 */
+.outer > li {
+  color: dodgerblue
+}
+
+/* .outer를 기준으로 손자만 지정하고 싶다면 */
+.outer > li li {
+  text-decoration: underline;
+}
+
+/*
+일촌 선택자인데 전체적으로 적용되는 경우
+.outer li를 주석처리하게 되면, .outer > li로, 일촌 자식 결합자만 지정했는데도 불구하고 dodgerblue가 사과 / 포도 / 딸기 / 키위에 적용되는 모습을 확인할 수 있는데, 이는 서체나 텍스트 관련 등 일부 CSS 속성들이 자식들에게 '자동 상속'되기 때문.
+
+이상을 이유로 일촌 자식 결합자라도 적용한 속성이 자동 상속이 된다면 손자나 증손자까지 이를 덮어쓰는 경우가 발생합니다.
+
+*/
+
+/* 뒤따르는 모든 동생들 결합자 */
+.starter ~ li {
+  font-weight: bold;
+}
+/*
+김사부터 적용되는거 보니 앞으로 좀 머리가 아프겠다
+*/
+
+/*가상 클래스 학습입니다
+가상 클래스 작성 방법 : ':'
+*/
+ol li:first-child,
+ol li:last-child {
+  color: yellowgreen
+}
+
+/*
+특정 요소를 제외한 요소를 선택하는 것도 가능
+':not'
+*/
+.outer > li:not(:last-child) {
+  text-decoration: line-through;
+}
+
+ul:not(.outer) li {
+  font-weight: 999;
+}
+
+/*nth-child
+
+~ 번째 요소 가상 클래스*/
+
+ol li:nth-child(3) {
+  font-weight: bold;
+  color: deeppink;
+}
+
+/* n번째 마다 */
+/* ol li:nth-child(2n) {
+  text-decoration: underline;
+  color: white;
+} */
+
+/* n번째마다 + k 
+n = 0부터 시작
+*/
+
+/* ol li:nth-child(3n + 1) {
+  text-wrap: 100;
+  color: darkmagenta;
+} */
+
+/*
+odd : 홀수에만
+even : 짝수에만 
+*/
+
+/* ol li:nth-child(odd) {
+  text-decoration: overline;
+  color: blue;
+} */
+
+/*미우스 오버 가상 클래스*/
+
+li:hover{
+  font-weight: bold;
+  color: blue;
+}
+/* 이상의 경우 우선 순위를 li만으로 잡아놨기 때문에 조건이 더 구체적인 애들과 충돌하여 무시되는 것*/

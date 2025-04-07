@@ -1,0 +1,8 @@
+p {
+  /* text-decoration: red wavy underline overline 1.2px; */
+  text-decoration: dashed line-through deeppink 2px;
+
+  /* text-transform: lowercase;
+  text-transform: uppercase; */
+  text-transform: capitalize;
+}

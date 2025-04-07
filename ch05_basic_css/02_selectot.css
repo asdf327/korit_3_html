@@ -1,0 +1,59 @@
+/* 이게 주석에 해당
+<!--이건 HTML 주석 -->
+모든 요소 선택
+*/
+* {
+  font-weight: bold;
+  color: darkorange
+}
+
+* {
+  color: plum
+}
+
+/* 태그 선택자 : 전체 선택자보다 우선순위가 높음
+
+그러면 우선순위가 일단은 조건이 촘촘한게 적용되고, 동일 순위라면 더 밑에 작성된 것이 적용된다고 볼 수 있습니다
+*/
+p {
+  color: olivedrab
+}
+
+/* 클래스 선택자
+태그 선택자보다 우선순위가 높음.
+페이지 상의 여러 요소가 같은 class를 지닐 수 있음
+p 태그의 class와 span 태그의 class를 동일하게 가져가는 것이 가능
+*/
+.blue {
+  color: lightblue
+}
+/*
+클래스 선택자의 특징 중 하나로,
+다른 선택자에 이어 붙이는 것이 가능함.
+근데 이건 또 띄어쓰기를 하는게 아니라 .을 연달아 찍습니다.
+*/
+p.blue {
+  color: slateblue
+}
+
+.blue.dark {
+  color: mediumblue
+}
+
+p.blue.dark {
+  color: darkblue
+}
+
+/* id 선택자
+class보다 우선순위가 높습니다
+id는 페이지 상에서 요소마다 고유해야 함(다 다른 이름이어야 합니다)
+표기는 #
+*/
+#red {
+  color: tomato
+}
+
+/* 그룹 선택자 */
+span, .dark, #red {
+  text-decoration: underline;
+} 

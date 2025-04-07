@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ch06_text_style/06_liststyle</title>
+  <style>
+    ul {
+      list-style:circle;
+      /* list-style:disc; */
+    }
+
+    /* ul내의 li별로 지정하는 것도 가능*/
+    ul > li:first-child{
+      list-style: "🌭";
+    }
+
+    ol {
+      /* list-style: lower-roman; */
+      list-style: lower-alpha;
+    }
+
+    ol > li:nth-child(odd){
+      list-style: "🍔";
+    }
+
+  </style>
+
+</head>
+<body bgcolor="5f5f5f">
+  <h1>06_liststyle</h1>
+  <br>
+  <ul>
+    <li>ul 아이템 1</li>
+    <li>ul 아이템 2</li>
+    <li>ul 아이템 3</li>
+  </ul>
+  <ol>
+    <li>ol 아이템 1</li>
+    <li>ol 아이템 2</li>
+    <li>ol 아이템 3</li>
+  </ol>
+</body>
+</html>
