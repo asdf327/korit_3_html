@@ -1,0 +1,16 @@
+# 오류
+'https://bbs.tunaground.net/trace.php/anchor/1596248350/685/1001',
+'https://bbs.tunaground.net/trace.php/anchor/1596248258/570/803 ',
+'https://bbs.tunaground.net/trace.php/anchor/1596248013/345/484',
+'https://bbs.tunaground.net/trace.php/anchor/1596248013/500/589',
+'https://bbs.tunaground.net/trace.php/anchor/1596248522/519/1001',
+'https://bbs.tunaground.net/trace.php/anchor/1596248593/1/515',
+'https://bbs.tunaground.net/trace.php/anchor/1596248632/309/465',
+'https://bbs.tunaground.net/trace.php/anchor/1596248805/187/632',
+'https://bbs.tunaground.net/trace.php/anchor/1596248805/642/1001',
+'https://bbs.tunaground.net/trace.php/anchor/1596248961/771/817',
+'https://bbs.tunaground.net/trace.php/anchor/1596249095/184/698',
+'https://bbs.tunaground.net/trace.php/anchor/1596249228/664/791',
+'https://bbs.tunaground.net/trace.php/anchor/1596249228/520/660',
+'ttps://bbs.tunaground.net/trace.php/anchor/1596249402/1/173',
+'https://bbs.tunaground.net/trace.php/anchor/1596249402/593/813'
